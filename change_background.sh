@@ -9,6 +9,7 @@ for r in `gresource list $gst`; do
         gresource extract $gst $r >$workdir${r/#\/org\/gnome\/shell/}
 done
 
+
 echo "Extracted gnome-shell theme to the theme dir"
 
 read a
