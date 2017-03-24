@@ -1,12 +1,14 @@
-#! /bin/sh
+#!/bin/bash
 
 
 workdir=$PWD
 gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
-mkdir theme
+if [ ! -d theme ]
+  then mkdir theme
+fi
 
-for r in `gresource list $gst`; do
-        gresource extract $gst $r >$workdir${r/#\/org\/gnome\/shell/}
+for r in `gresource list $gst`;
+ do gresource extract $gst $r > $workdir${r/#\/org\/gnome\/shell/}
 done
 
 echo "Extracted gnome-shell theme to the theme dir"
@@ -45,4 +47,3 @@ echo "Installing the theme please enter the password"
 
 sudo mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.bak
 sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
-
