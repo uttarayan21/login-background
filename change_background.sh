@@ -44,7 +44,7 @@ glib-compile-resources gnome-shell-theme.gresource.xml
 
 echo "Installing the theme please enter the password"
 
-sudo mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.bak
+sudo mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.$(date +"%Y-%m-%d_%H-%M-%S").bak
 sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
 
 unset a;
