@@ -47,4 +47,6 @@ echo "Installing the theme please enter the password"
 sudo mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.$(date +"%Y-%m-%d_%H-%M-%S").bak
 sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
 
+cd -
+
 unset a;
