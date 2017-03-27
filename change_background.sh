@@ -1,7 +1,8 @@
 #!/bin/bash
 
-
 workdir=$PWD
+
+
 gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
 if [ ! -d theme ]
   then mkdir theme
@@ -12,8 +13,6 @@ for r in `gresource list $gst`;
 done
 
 echo "Extracted gnome-shell theme to the theme dir"
-
-read a > /dev/null
 
 echo "Please copy the login-background.png to the theme dir and press enter"
 
@@ -47,3 +46,5 @@ echo "Installing the theme please enter the password"
 
 sudo mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.bak
 sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
+
+unset a;
