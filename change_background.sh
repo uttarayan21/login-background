@@ -20,6 +20,7 @@ read a > /dev/null
 
 if [ ! -e "theme/login-background.png" ]
     then echo "Please try again"
+    exit 1;
 fi
 
 sed 's/noise-texture.png/login-background.png/' < theme/gnome-shell.css > gnome-shell.css
