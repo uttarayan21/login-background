@@ -8,3 +8,7 @@ On Ubuntu 17.10 the Vanilla GNOME login screen was changed to a modified Ubuntu 
 ```sudo update-alternatives --config gdm3.css```
 
 However you can use the Vanilla GNOME on 17.10 by issuing this command and selectng gnome-shell.css
+
+That should make this work but it isn't
+
+Even thugh the image isn't displayed in the login screen it is displayed in the lockscreen login background 
