@@ -5,6 +5,6 @@ ss# login-background
 
 On Ubuntu 17.10 the Vanilla GNOME login screen was changed to a modified Ubuntu Version which doesn't work with this !
 
-however selecting gnome-shell.css in gdm3.css alternatives brings back Vanilla GNOME login screen and so this works !
-
 ```sudo update-alternatives --config gdm3.css```
+
+However you can use the Vanilla GNOME on 17.10 by issuing this command and selectng gnome-shell.css
